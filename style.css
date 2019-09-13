@@ -1,199 +1,215 @@
 body {
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    align-self: auto;
-    box-sizing: border-box;
-    justify-self: center;
-
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  align-self: auto;
+  box-sizing: border-box;
+  justify-self: center;
 }
 
 ul {
-    list-style-type: none;
-    margin-left: 35px;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ef8724;
+  list-style-type: none;
+  margin-left: 35px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ef8724;
 }
 
 li {
-    float: left;
-    padding: 0%;
+  float: left;
+  padding: 0%;
 }
 
 li a {
-    display: block;
-    padding: 0%;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition: 0.5s;
-    font-size: 25px;
+  display: block;
+  padding: 0%;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.5s;
+  font-size: 25px;
 }
 
 li a:hover {
-    background-color: #fdcc4b;
+  background-color: #fdcc4b;
 }
 
 /* FLEX  */
 .flexbox_con {
-    /* float: left; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    justify-self: center;
-    margin-top: auto;
-    vertical-align: middle;
+  /* float: left; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  margin-top: auto;
+  vertical-align: middle;
 }
 
 .box {
-    /* float: left; */
-    /* border: #e7707d solid; */
-    /* width: 60%; */
-    width: 350px;
-    height: 300px;
-    margin-top: 15%;
-    margin-right: 20px;
-    justify-content: center;
-    justify-self: center;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: #ffffff;
-    transition: 0.4s;
-    /* box-shadow: 10px 10px 10px 10px #ffffff; */
+  /* float: left; */
+  /* border: #e7707d solid; */
+  /* width: 60%; */
+  width: 350px;
+  height: 300px;
+  margin-top: 15%;
+  margin-right: auto;
+  margin-left: auto;
+
+  justify-content: center;
+  justify-self: center;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  transition: 0.4s;
+  /* box-shadow: 10px 10px 10px 10px #ffffff; */
 }
 
 .box:hover {
-    /* background-color: aliceblue; */
-    /* filter: invert(1); */
-    height: 350px;
-    margin-top: 12%;
+  /* background-color: aliceblue; */
+  /* filter: invert(1); */
+  height: 350px;
+  margin-top: 12%;
 
-    width: 400px;
-    /* box-shadow: 10px 10px 10px 10px #ffffff; */
+  width: 400px;
+  /* box-shadow: 10px 10px 10px 10px #ffffff; */
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.box>a>h1 {
-    text-transform: uppercase;
-    text-align: center;
-    align-content: center;
-    font-family: sans-serif;
-    text-decoration: none;
-    color: #929292;
+.box > a > h1 {
+  text-transform: uppercase;
+  text-align: center;
+  align-content: center;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #929292;
 }
 
-.b1>a>img {
-    display: block;
-    height: 250px;
-    margin-left: auto;
-    margin-right: auto;
+.b1 > a > img {
+  display: block;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.b2>a>img {
-    display: block;
-    height: 250px;
-    margin-left: auto;
-    margin-right: auto;
+.b2 > a > img {
+  display: block;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.b3>a>img {
-    display: block;
-    height: 250px;
-    margin-left: auto;
-    margin-right: auto;
+.b3 > a > img {
+  display: block;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-
 
 /* BACKGROUND */
 @keyframes move_wave {
-    0% {
-        transform: translateX(0) translateZ(0) scaleY(1);
-    }
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1);
+  }
 
-    50% {
-        transform: translateX(-25%) translateZ(0) scaleY(0.55);
-    }
+  50% {
+    transform: translateX(-25%) translateZ(0) scaleY(0.55);
+  }
 
-    100% {
-        transform: translateX(-50%) translateZ(0) scaleY(1);
-    }
+  100% {
+    transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
 }
 
 .waveWrapper {
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
-    z-index: -25;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  z-index: -25;
 }
 
 .waveWrapperInner {
-    position: absolute;
-    width: 100%;
-    overflow: hidden;
-    height: 100%;
-    bottom: -1px;
-    background-image: linear-gradient(to top, #fdcc4b 20%, #ef8724 80%);
-    /* background-color: #f7ad86; */
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  bottom: -1px;
+  background-image: linear-gradient(to top, #fdcc4b 20%, #ef8724 80%);
+  /* background-color: #f7ad86; */
 }
 
 .bgTop {
-    z-index: 15;
-    opacity: 0.5;
+  z-index: 15;
+  opacity: 0.5;
 }
 
 .bgMiddle {
-    z-index: 10;
-    opacity: 0.75;
+  z-index: 10;
+  opacity: 0.75;
 }
 
 .bgBottom {
-    z-index: 5;
+  z-index: 5;
 }
 
 .wave {
-    position: absolute;
-    left: 0;
-    width: 200%;
-    height: 100%;
-    background-repeat: repeat no-repeat;
-    background-position: 0 bottom;
-    transform-origin: center bottom;
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
 }
 
 .waveTop {
-    background-size: 50% 100px;
+  background-size: 50% 100px;
 }
 
 .waveAnimation .waveTop {
-    animation: move-wave 3s;
-    -webkit-animation: move-wave 3s;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
+  animation: move-wave 3s;
+  -webkit-animation: move-wave 3s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 .waveMiddle {
-    background-size: 50% 120px;
+  background-size: 50% 120px;
 }
 
 .waveAnimation .waveMiddle {
-    animation: move_wave 10s linear infinite;
+  animation: move_wave 10s linear infinite;
 }
 
 .waveBottom {
-    background-size: 50% 100px;
+  background-size: 50% 100px;
 }
 
 .waveAnimation .waveBottom {
-    animation: move_wave 15s linear infinite;
+  animation: move_wave 15s linear infinite;
+}
+@media only screen and (max-width: 600px) {
+  .box {
+    width: 200px;
+    height: 150px;
+  }
+  .box > a > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 100px;
+  }
+  .box:hover {
+    width: 225px;
+    height: 175px;
+  }
 }
